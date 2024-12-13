@@ -1,0 +1,30 @@
+@use 'Global';
+@use 'Header'; 
+@use 'Footer';
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+@font-face {
+    font-family: "RobotoBl";
+    src: url('font/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: "RobotoB";
+    src: url('font/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: "RobotoR";
+    src: url('font/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: "RobotoM";
+    src: url('font/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: "RobotoL";
+    src: url('font/Roboto-Light.ttf');
+}

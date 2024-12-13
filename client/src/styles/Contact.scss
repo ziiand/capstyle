@@ -1,0 +1,46 @@
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    h1 {
+      font-family: 'RobotoB';
+      font-size: 2rem;
+      color: #222;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+  
+    p {
+      font-family: 'RobotoL';
+      font-size: 1.2rem;
+      color: #555;
+      line-height: 1.6;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .contact-container {
+      padding: 3rem;
+      max-width: 800px;
+  
+      h1 {
+        font-size: 2.5rem;
+      }
+  
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  

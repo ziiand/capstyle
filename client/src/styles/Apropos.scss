@@ -1,0 +1,130 @@
+.a-propos {
+  padding: 2rem 1.5rem;
+  background: #ffffff;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.8;
+  text-align: center;
+
+  h1 {
+    font-family: 'RobotoB';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+
+  article {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    h2 {
+      font-family: 'RobotoB';
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #222;
+    }
+
+    .article-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+
+      img.picture-article-container {
+        width: 90%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      p {
+        font-family: 'RobotoL';
+        font-size: 1rem;
+        color: #555;
+        text-align: justify;
+      }
+
+      &:hover img.picture-article-container {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .a-propos {
+    padding: 3rem 4rem;
+    text-align: center;
+  }
+
+  article:nth-child(odd) .article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+
+    img.picture-article-container {
+      order: 1; 
+      width: 100%;
+      max-height: 250px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  article:nth-child(even) .article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+
+    img.picture-article-container {
+      order: 2; 
+      width: 100%;
+      max-height: 250px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .a-propos {
+    padding: 4rem 6rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  article {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    .article-container {
+      gap: 4rem;
+
+      img.picture-article-container {
+        width: 80%;
+        max-height: 300px;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
